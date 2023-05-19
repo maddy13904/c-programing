@@ -6,7 +6,7 @@ printf("enter your number:");
 scanf("%d",&n);
 {for(i=1;i<=n;i++)
 if(n==0||n==1)
-printf("the factorial of your number: %d",n);
+printf("the factorial of your number: 1");
 else
 fact=fact*i;
 }
