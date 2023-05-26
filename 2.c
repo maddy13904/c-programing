@@ -1,11 +1,14 @@
-#include<stdio.h>
-#include<conio.h>
-int main(){
-    int i=3,val,f(int num);
-    val=sizeof f(i)+ +f(i=1)+ +f(i-1);
-    printf("%d %d",val,i);
+#include <stdio.h>
+int main() 
+{char x, f;
+printf("-----Enter a character to check itself-----\n");
+scanf("%c", &x);
+f = (x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z') ? 1 : 0;
+if (f) {
+printf("\n%c is an alphabet character.\n", x);
+} 
+else 
+{printf("\n%c is not an alphabet character.\n", x);
 }
-int f(int num){
-    return num*5;
+return 0;
 }
-

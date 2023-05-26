@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<conio.h>
-void display(char *string)
-{
-printf("%s",string);
+int fork();
+int main() 
+{int a = 10;      
+if (fork ( ) == 0)      
+a++; 
+return 0;}
+int fork()
+{int a=10;
+printf ("%dn", a ); 
+return 1;
 }
-int main()
-{
-char string[]="Hello World";
-display(string);
-}
-
 

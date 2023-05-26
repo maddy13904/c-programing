@@ -1,15 +1,10 @@
-#include <bits/stdc++.h>
-using namespace std;
- 
-int findFirst(int arr[], int n, int x)
-{sort(arr, arr + n);
-int* ptr = lower_bound(arr, arr + n, x);
- return (*ptr != x) ? -1 : (ptr - arr);
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+int main()
+{   
+int arr[]={2,3,4,1,6};  
+  printf("%u, %u, %un", arr, &arr[0], &arr);  
+  return 0;
 }
- int main()
-{
-int x=60 , arr[] = { 10, 30, 20, 50, 20 };
-int n = sizeof(arr) / sizeof(arr[0]);
-cout << findFirst(arr, n, x);
-return 0;
-}
+

@@ -1,14 +1,10 @@
 #include<stdio.h>
-#include<conio.h>
-float avg(float,float,float);
-float avg(float x,float y,float z)
-{
-    return (x+y+z)/3;
+int main()
+{int n,i,sum;
+printf("enter till which number: ");
+scanf("%d",&n);
+for(i=1;i<=n;i+2)
+{sum=sum+i;
 }
-int main(){
-    float p=1,q=2,r=-2,a;
-    a=avg(p,q,r);
-    printf("%f",a);  
+printf("the sum of odd numbers between 1 to %d= %d",n,sum);
 }
-
-

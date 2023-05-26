@@ -1,16 +1,16 @@
-#include "string.h"
-typedef struct stu1{
-    char name1[6];
-    char name2[6];
-    double marks;
-}STU1;
+#include<stdio.h>
+void fun(int **p);
 int main()
-{STU1.name1="rohit";
-STU1.name2="kumar";
-STU1.marks=87.43;
-char *p;
-p=*&stu1;
-printf("%s",p);  
+{   
+ int a[3][4] = {1, 2, 3, 4, 4, 3, 2, 8, 7, 8, 9, 0}; 
+   int *ptr; 
+   ptr = &a[0][0];  
+  fun(&ptr); 
+   return 0;
+}
+void fun(int **p)
+{
+    printf("%dn", **p);
 }
 
 
